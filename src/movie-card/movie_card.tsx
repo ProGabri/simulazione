@@ -11,6 +11,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { movie } from "../types/type";
+import { Link } from "react-router-dom";
 interface moviecardprops {
   movied: movie;
 }
@@ -19,7 +20,9 @@ export const MovieCard = ({ movied }: moviecardprops) => {
   return (
     <Card maxW="sm">
       <CardBody>
-        <Image src={movied.Poster} alt={movied.Title} borderRadius="lg" />
+        <Link to="/desc_film">
+          <Image src={movied.Poster} alt={movied.Title} borderRadius="lg" />
+        </Link>
         <Stack mt="6" spacing="3">
           <Heading size="md">{movied.Title}</Heading>
 
