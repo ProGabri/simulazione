@@ -1,4 +1,5 @@
 import { useRouteError } from "react-router-dom"; // Replace with the correct import
+import { Header } from "./header";
 
 export default function ErrorPage() {
   const error = useRouteError(); // Replace with your custom hook
@@ -6,7 +7,7 @@ export default function ErrorPage() {
 
   return (
     <div id="error-page">
-      <h1>Oops!</h1>
+      <Header /> <h1>Oops!</h1>
       <p>Sorry, an unexpected ciao.</p>
       <p>
         <i>{error?.statusText || error?.message}</i>
