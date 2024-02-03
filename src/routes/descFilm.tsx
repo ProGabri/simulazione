@@ -1,8 +1,9 @@
 import { LoaderFunction, useLoaderData } from "react-router-dom";
 import { getDetailMovie } from "../imdb/getDetailMovie";
 import { movie } from "../types/type";
-import { ListaDesc } from "../listaMovie/ListaDesc";
+
 import { Header } from "./header";
+import { ListaDesc } from "../listaMovie/ListaDesc";
 
 
 

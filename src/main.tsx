@@ -3,12 +3,12 @@ import ReactDOM from "react-dom/client";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import ErrorPage from "./routes/error-page.jsx";
+import ErrorPage from "./routes/errorPage.js";
 
 import Homepage from "./routes/homepage.js";
 import { ChakraProvider } from "@chakra-ui/react";
-import Elenco_movie from "./routes/elenco_movie.js";
-import { moviesLoader } from "./routes/elenco_movie.js";
+import Elenco_movie from "./routes/elencoMovie.js";
+import { moviesLoader } from "./routes/elencoMovie.js";
 import DescFilm, { Moviedescr } from "./routes/descFilm.js";
 
 

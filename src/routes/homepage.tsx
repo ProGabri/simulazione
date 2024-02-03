@@ -3,7 +3,7 @@ import {  Outlet } from "react-router-dom";
 import { Header } from "./header";
 
 
-import Elenco_movie from "./elenco_movie";
+import Elenco_movie from "./elencoMovie";
 
 
 
