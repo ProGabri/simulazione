@@ -8,7 +8,7 @@ export default function ErrorPage() {
   return (
     <div id="error-page">
       <Header /> <h1>Oops!</h1>
-      <p>Sorry, an unexpected ciao.</p>
+      <p>Sorry, an unexpected .</p>
       <p>
         <i>{error?.statusText || error?.message}</i>
       </p>

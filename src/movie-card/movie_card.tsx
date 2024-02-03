@@ -20,7 +20,7 @@ export const MovieCard = ({ movied }: moviecardprops) => {
   return (
     <Card maxW="sm">
       <CardBody>
-        <Link to="/desc_film">
+      <Link to={`/movies/${movied.imdbID}`}>
           <Image src={movied.Poster} alt={movied.Title} borderRadius="lg" />
         </Link>
         <Stack mt="6" spacing="3">
@@ -32,6 +32,7 @@ export const MovieCard = ({ movied }: moviecardprops) => {
       <Divider />
       <CardFooter>
         <p>{movied.Year}</p>
+        
         <p>{movied.Type}</p>
       </CardFooter>
     </Card>

@@ -9,19 +9,27 @@ import Homepage from "./routes/homepage.js";
 import { ChakraProvider } from "@chakra-ui/react";
 import Elenco_movie from "./routes/elenco_movie.js";
 import { moviesLoader } from "./routes/elenco_movie.js";
+import DescFilm, { Moviedescr } from "./routes/descFilm.js";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
     errorElement: <ErrorPage />,
+    loader: moviesLoader,
     children: [
       {
-        loader: moviesLoader,
         path: "/elenco_movie",
         element: <Elenco_movie />,
       },
+     
     ],
+  },
+  {
+    path: "/movies/:id",
+   element: <DescFilm />,
+   loader:Moviedescr,
   },
 ]);
 

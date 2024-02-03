@@ -3,8 +3,10 @@ import GetMovies from "../imdb/getMovies";
 import { movie } from "../types/type";
 import { ListaMovie } from "../listaMovie/listaMovie";
 
+
 export async function moviesLoader() {
   const movies = await GetMovies();
+  
   return movies.Search;
 }
 export default function Elenco_movie() {
@@ -12,6 +14,7 @@ export default function Elenco_movie() {
   return (
     <div>
       <ListaMovie listmovie={movieapi} />
+      
     </div>
   );
 }

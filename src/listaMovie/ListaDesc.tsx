@@ -1,23 +1,18 @@
-import React from "react";
-import { modedesc } from "../types/type";
+import Moviedesc from "../movie-card/movie_desc";
+import { movie } from "../types/type";
 
 interface ListaDescProps {
-  movies: modedesc[];
+  movies: movie[];
 }
 
-const ListaDesc: React.FC<ListaDescProps> = ({ movies }) => {
+export const ListaDesc = ({ movies }: ListaDescProps) => {
   return (
     <div>
       <ul>
-        {movies.map((movie) => (
-          <li key={movie.id}>
-            <h3>{movie.title}</h3>
-            <p>{movie.description}</p>
-          </li>
+        {movies.map((singleMovie) => (
+          <Moviedesc key={singleMovie.imdbID} moviede={singleMovie} />
         ))}
       </ul>
     </div>
   );
 };
-
-export default ListaDesc;
