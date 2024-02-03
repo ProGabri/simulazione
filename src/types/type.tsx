@@ -6,6 +6,10 @@ export type movie = {
   Poster?: string;
   Plot?: string;
   Genre?: string;
+  Director?: string;
+  Actors?: string;
+  imdbRating?: string;
+  
 
 };
 

@@ -10,8 +10,12 @@ interface moviecardprops {
 function Moviedesc ({moviede}:moviecardprops)  {
     return (
         <div className="movie-card">
-            <h1>{moviede.Title}</h1>
+            
             <p>{moviede.Plot}</p>
+            <p>{moviede.Director}</p>
+            <p>{moviede.Actors}</p>
+            <p>{moviede.Genre}</p>
+            <p>{moviede.imdbRating}</p>
         </div>
     );
 };
